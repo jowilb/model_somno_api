@@ -146,3 +146,8 @@ def predict():
         return jsonify({'prediction': int(prediction[0])})
     except Exception as e:
         return jsonify({'error': str(e)})
+
+
+@app.route('/')
+def index():
+    return 'Hello, World!'
