@@ -136,15 +136,6 @@ with open('model.pkl', 'rb') as file:
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    # data = request.json
-
-    # buatkan dummy data
-    # data = {
-    #     'features': [8, 7, 9, 8, 9, 10, 8]
-    # }
-    # prediction = model.predict([np.array(data['features'])])
-    # return jsonify({'prediction': int(prediction[0])})
-
     try:
         # data = request.json
         data = {  # dummy data
