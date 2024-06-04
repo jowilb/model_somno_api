@@ -130,7 +130,7 @@ def categorize_bmi(bmi):
 app = Flask(__name__)
 
 # Load the model
-with open('model.pkl', 'rb') as file:
+with open('./model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 
