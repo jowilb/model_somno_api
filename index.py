@@ -12,11 +12,7 @@ with open('./model.pkl', 'rb') as file:
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        # data = request.json
-        data = {  # dummy data
-            'features': [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
-        }
-
+        data = request.json
         prediction = model.predict([np.array(data['features'])])
         return jsonify({'prediction': int(prediction[0])})
     except Exception as e:
