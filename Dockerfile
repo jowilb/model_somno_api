@@ -12,4 +12,4 @@ WORKDIR $APP_HOME
 COPY . .
 
 EXPOSE 8080
-CMD ["python", "main.py", "8080"]
+CMD ["python", "index.py", "8080"]
