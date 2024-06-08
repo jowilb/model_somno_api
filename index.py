@@ -21,7 +21,7 @@ def predict():
 
 @app.route('/')
 def index():
-    return 'Hello, World!'
+    return 'Hello, World! 123'
 
 
 if __name__ == '__main__':
